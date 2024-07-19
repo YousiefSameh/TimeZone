@@ -1,0 +1,129 @@
+:root {
+  --red-color: #FF2020;
+  --dark-color: #071D37;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Start Components */
+.main-btn {
+  padding: 0.5rem 1rem;
+  color: var(--red-color);
+  border: 1px solid var(--red-color);
+  border-radius: 5px;
+  transition: 0.25s all ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.main-btn:hover {
+  background-color: var(--red-color);
+  color: white;
+}
+
+.main-btn:active {
+  transform: scale(0.9);
+}
+/* End Components */
+
+/* Start Navbar */
+header .container .navbar .nav-item:hover {
+  background-color: #ff202085;
+}
+/* End Navbar */
+/* Start Hero */
+.hero-section {
+  height: calc(100vh - 56px);
+  overflow: hidden;
+}
+
+.hero-section h1 {
+  font-size: 5rem;
+  color: var(--dark-color);
+}
+
+@media only screen and (max-width: 576px) and (min-width: 300px) {
+  .hero-section h1,
+  .choices h1 {
+    font-size: 3rem !important;
+  }
+}
+
+.hero-section img {
+  top: -80%;
+}
+/* End Hero */
+/* Start Products */
+.products img {
+  cursor: pointer;
+}
+/* End Products */
+/* Start Gallary */
+.gallary {
+  overflow: hidden;
+}
+
+.gallary img {
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.gallary img:hover {
+  transform: rotate(2deg);
+}
+/* End Gallary */
+/* Start Items */
+.items .row .colmn > div {
+  cursor: pointer;
+}
+
+.items .row .colmn > div img {
+  border-bottom: 1px solid var(--red-color);
+}
+
+.items .row .colmn > div div {
+  background-color: var(--red-color);
+  color: white;
+  padding: 1rem 0;
+  opacity: 0;
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+
+@media only screen and (max-width: 576px) and (min-width: 300px) {
+  .items .main-heading {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+  .choices .colmn {
+    text-align: center;
+  }
+}
+
+.items .row .colmn > div:hover div {
+  opacity: 1;
+}
+/* End Items */
+/* Start Choices */
+.choices h1 {
+  font-size: 4rem;
+}
+/* End Choices */
+/* Start Cards */
+.cards .row .column {
+  background-color: var(--red-color);
+  padding: 2.5rem;
+}
+/* End Cards */
+/* Start Footer */
+span {
+  color: var(--red-color);
+}
+/* End Footer */
